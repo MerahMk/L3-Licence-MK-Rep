@@ -42,7 +42,7 @@ h6 {
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 input:focus {
@@ -559,6 +559,10 @@ footer {
 
     .introtext h2 {
         text-align: center;
+    }
+    .introtext p {
+        text-align: justify;
+        font-size: 18px;
     }
 
     .linevertical {
@@ -1113,11 +1117,4 @@ form {
         padding: 25px 0;
     }
 
-}
-
-
-@media (max-width: 540px){
-    body{
-        font-size: 22px !important;
-    }
 }
