@@ -12,7 +12,6 @@ body{
     background: #c4d7f2;
     color: black;
     font-family: ubuntu, sans-serif;
-    font-size: 18px!important;
 }
 li {
     list-style: none;
@@ -1114,4 +1113,11 @@ form {
         padding: 25px 0;
     }
 
+}
+
+
+@media (max-width: 540px){
+    body{
+        font-size: 18px !important;
+    }
 }
