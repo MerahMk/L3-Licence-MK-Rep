@@ -12,6 +12,7 @@ body{
     background: #c4d7f2;
     color: black;
     font-family: ubuntu, sans-serif;
+    font-size: 20px !important;
 }
 li {
     list-style: none;
@@ -530,6 +531,9 @@ footer {
 
 
 @media only screen and (max-width:768px) {
+    body{
+        font-size: 18 !important;
+    }
     .over-background{
     background-size: cover;
     border-bottom-left-radius: 0px 0px;
