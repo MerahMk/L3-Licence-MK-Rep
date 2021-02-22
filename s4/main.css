@@ -1,0 +1,235 @@
+
+.space-top {
+    margin-top: 30px !important;
+}
+
+.rounded-top {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.rounded-bottom {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.rounded {
+    border-radius: 30px;
+}
+
+.items {
+    width: 100%;
+    padding: 80px 0px;
+    background-color: #c0e5ff;
+    display: inline-block;
+    position: relative;
+}
+
+.gb {
+    background-color: #c4ffeb;
+}
+
+.eln {
+    background-color: #ffe1ea;
+}
+
+.itemscontent {
+    width: 80%;
+    margin: 0 auto;
+    direction: ltr;
+}
+
+.itemscontent h3 {
+    margin: 0px 0px 30px 0px;
+    text-transform: uppercase;
+}
+
+.accordion {
+    background-color: #57c3fd;
+    margin-top: 4px;
+    padding: 0px 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: .3s;
+    font-family: ubuntu, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    overflow: hidden;
+    text-align: left;
+
+}
+
+.accordion:hover {
+    background-color: #1bafff;
+}
+
+.accgb {
+    background-color: #0df9c9;
+}
+
+.accgb:hover {
+    background-color: #00ffa7;
+}
+
+.acceln {
+    background-color: #ff6ee0;
+}
+
+.acceln:hover {
+    background-color: #fd31be;
+}
+
+.accordion::after {
+    content: '';
+    background-color: #50505030;
+    padding: 0px;
+    margin-top: 8px;
+    transition: .3s;
+    width: 70px;
+    height: 70px;
+    transform: rotate(15deg);
+    border-radius: 5px;
+    clip-path: polygon(50% 0, 100% 0%, 50% 100%, 0% 0%);
+    display: inline-table;
+}
+
+.activeacc {
+    background-color: #d1d1d1 !important;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.activeacc::after {
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%, 0% 100%) !important;
+    transition: .3s;
+}
+
+.panel {
+    background-color: #86cff7;
+    max-height: 0;
+    overflow: hidden;
+    color: black;
+    transition: max-height .5s ease-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.panelgb {
+    background-color: #94ffeb;
+}
+
+.paneleln {
+    background-color: #ffb3c9;
+}
+
+.panel-contents {
+    padding: 40px 0;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.panel-contents > * {
+    margin-bottom: 25px;
+}
+
+.panel-contents > a {
+    color: #deebf7;
+    background-color: #0070c0;
+    border-radius: 40px;
+    padding: 15px 10%;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+}
+.panel-contents > a i{
+    line-height:1.5;
+    margin-right: 5px;
+}
+
+.panel-contents > a:hover {
+    background-color: rgba(0, 112, 192, 0.5);
+    transition: .3s;
+}
+
+
+.inline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.inline a:nth-child(1) {
+    margin: 0;
+    float: left;
+    width: 100%;
+    height: 100%;
+    font-weight: 500;
+    text-align: left;
+    border: solid 1px white;
+    color: black;
+    padding: 15px 30px;
+    cursor: pointer;
+    background-color: #0083ff36;
+    transition: .5s;
+}
+
+.inline a:nth-child(1):hover {
+    background-color: #00000050;
+    transition: .5s;
+}
+
+.inline a:nth-child(2) {
+    margin: 0;
+    cursor: pointer;
+    float: right;
+    font-weight: 500;
+    border: solid 1px white;
+    background-color: #cecece;
+    color: black;
+    padding: 15px 60px;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inline a:nth-child(2):hover {
+    background-color: white;
+    transition: .5s;
+    box-shadow: 0px 0px 30px 10px white;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .itemscontent {
+        width: 100%;
+    }
+
+    .itemscontent h3 {
+        margin: 0px 30px 30px 30px
+    }
+
+    .accordion {
+        margin-top: 10px;
+        padding:0 30px;
+        height: 80px;
+
+    }
+    .accordion::after{
+        width: 85px!important;
+        height: 80px;
+    }
+
+
+}

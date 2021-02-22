@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moyenne de Classement - L2 Telecom</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../icon.png">
+
+    <meta name="description" content="Calculer la moyenne du classement entr L1 et L2">
+    <meta name="author" content="Merah Mkr">
+    <meta property="og:title" content="Moyenne de Classement - L2 Telecom">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ustotc.com/s4/calcul-moyenne-de-classement-l2/">
+    <meta property="og:image" content="../../img/ustotc-cover.jpg">
+    <meta property="og:image:width" content="456">
+    <meta property="og:image:height" content="307">
+    <meta name="theme-color" content="#002e40">
+</head>
+<body>
+
+    <div class="all">
+        <div class="main">
+            <div class="input-table">
+                <label for="s1moy">Moyenne s1 <p>*</p></label>
+                <input type="number" placeholder="Ex 12.62 / 20" min="0"  max="20" id="s1moy">
+            </div>
+
+            <div class="input-table">
+                <label for="s2moy">Moyenne s2 <p>*</p></label>
+                <input type="number" min="0"  max="20" id="s2moy">
+            </div>
+            
+            <div class="input-table">
+                <label for="s3moy">Moyenne s3 <p>*</p></label>
+                <input type="number" min="0"  max="20" id="s3moy">
+            </div>
+
+            <div class="input-table">
+                <label for="s4moy">Moyenne s4 <p>*</p></label>
+                <input type="number"  min="0"  max="20" id="s4moy">
+            </div>
+
+            <div class="input-table">
+                <label for="ajourne">Combien vous avez redoublez</label>
+                <input type="number" placeholder="Entre 0 et 3, Laisser le champs vide si zero" min="0"  max="3" id="ajourne">
+            </div>
+
+            <div class="input-table">
+                <label for="dette">Combien vous avez admis avec dettes</label>
+                <input type="number" min="0"  max="3" id="dette">
+            </div>
+
+            <div class="input-table">
+                <label for="rattrapage">Combien vous avez admis avec rattrapage</label>
+                <input type="number" placeholder="Semestres validés apres un rattrapage, Entre 0 et 4" min="0" max="4" id="rattrapage">
+            </div>
+
+        </div>
+
+        <button onClick="calculMoyenne()"> Calcler</button>
+
+        <label for="moyAnn">La moyenne générale</label>
+        <p id="moyAnn"></p>
+
+        <label for="moyClass">La moyenne du Classement</label>
+        <p id="moyClass"></p>
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
