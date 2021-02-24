@@ -43,7 +43,7 @@ h6 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 input:focus {
@@ -100,7 +100,7 @@ input:focus {
 }
 
 
-#particles-js{ position:absolute; width: 100%; height: 100%; background-color: ; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+#particles-js{ position:absolute; width: 100%; height: 100%;}
 
 
 
@@ -183,9 +183,7 @@ input:focus {
     border-top-color: transparent;
     animation: rotate-it-right 3s infinite linear;
     animation-delay: 0s;
-}
-
-.rot span:nth-child(2) {
+}.rot span:nth-child(2) {
     background: linear-gradient(0deg, transparent 35.999%, black 35.1%, black 64.999%, transparent 65%);
     width: 125px;
     height: 125px;
@@ -200,18 +198,14 @@ input:focus {
 
 
 
-}
-
-.rot span:nth-child(2)::after {
+}.rot span:nth-child(2)::after {
     content: "";
     background-color: #c4d7f2;
     border-radius: 50%;
     position: absolute;
     width: 121px;
     height: 121px;
-}
-
-.rot span:nth-child(3) {
+}.rot span:nth-child(3) {
     background-color: transparent;
     width: 100px;
     height: 100px;
@@ -225,7 +219,6 @@ input:focus {
     animation: rotate-it 2s infinite linear;
     animation-delay: 0s;
 }
-
 .rot i {
     background-color: transparent;
     width: 150px;
@@ -246,9 +239,7 @@ input:focus {
     100% {
         transform: rotate(360deg)
     }
-}
-
-@keyframes rotate-it-right {
+}@keyframes rotate-it-right {
     0% {
         transform: rotate(360deg)
     }
@@ -353,9 +344,6 @@ input:focus {
 .accordion-button-items{
     display: flex;
     flex-direction: row;
-
-}
-.accordion-infos{
 
 }
 .moodle-disponibility{
@@ -583,12 +571,15 @@ footer {
     .list-accordions{
     width: 100%;
     }
-    
+    .spacing-top{
+        margin-top: 30px;
+    }
     .accordion-button {
     display: grid;
     grid-template-columns: 92% 30px;
     padding: 20px 20px;
-    border-bottom: solid 6px white;
+    margin-top: 10px;
+    border-bottom: solid 3px white;
     }
     
     .accordion-button-items {
