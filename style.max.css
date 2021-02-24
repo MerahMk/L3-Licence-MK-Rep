@@ -346,6 +346,10 @@ input:focus {
     flex-direction: row;
 
 }
+.accordion-title{
+    font-size: 22px;
+    font-weight: bold;
+}
 .moodle-disponibility{
     margin-top: 5px;
     text-align: center;
